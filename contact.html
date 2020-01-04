@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en-us'">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nick Ezell</title>
+    <!--<link rel="stylesheet" href="css/reset.css">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!--Div with two sections comprising the header-->
+
+    <div id="header">
+
+        <section id="logo">
+            <h1>Nick Ezell</h1>
+        </section>
+
+        <section id="nav">
+
+            <!--Trying to work on a hamburger menu-->
+            <!-- Just comment the m-menu-hide span and uncomment the a tags below for normal menu -->
+
+            <a id="main-menu-toggle" href="#main-menu" class="menu-toggle" aria-label="Open main menu">
+                <span class="sr-only">Open main menu</span>
+              <span class="fa fa-bars" aria-hidden="true"></span>
+            </a>
+
+            <nav id="main-menu" class="main-menu" aria-label="Main menu">
+                <a href="#main-menu-toggle" class="menu-close" id="main-menu-close" aria-label="Close main menu">
+                    <span class="sr-only">Close main menu</span>
+                  <span class="fa fa-close" aria-hidden="true"></span>
+                </a>
+                <ul>
+                <li><a href="index.html">About<span id="lineHide">│</span></a></li>
+                <li><a href="contact.html">Contact<span id="lineHide">│</span></a></li>
+                <li><a href="portfolio.html">Portfolio<span id="lineHide">│</span></a></li>
+            </nav>
+            <a href="#main-menu-toggle" class="backdrop" table-index="-1" aria-hidden="true" hidden></a>
+
+            <!-- <a href="index.html">About │ </span></a>
+            <a href="contact.html">Contact │ </span></a>
+            <a href="portfolio.html">Portfolio</span></a> -->
+
+        </section>
+
+    </div>
+
+    <!--Container holding main content-->
+
+    <div class="container" id="container">
+
+        <header>
+
+            <h2>Contact</h2>
+
+        </header>
+
+        <form action="mailto:nickolasezell@gmail.com" method="GET">
+            <label id="contactForm">Name</label>
+            <br>
+            <input type="text" name="subject"></input>
+
+            <label id="contactForm">Email</label>
+            <br>
+            <input type="email">
+
+            <label id="contactForm">Message</label>
+            <br>
+            <textarea name="body"></textarea>
+            <br>
+            <button class="button" type="submit" value="send">Submit
+            </button>
+            <button class="button2" type="reset" value="reset">&nbsp;Reset&nbsp;</button>
+        </form>
+        <br>
+
+
+    </div>
+
+    <!--Footer with copyright-->
+
+    <div id="footer">
+
+        &copy;Nick Ezell - 2019
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/cf311dccc4.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
